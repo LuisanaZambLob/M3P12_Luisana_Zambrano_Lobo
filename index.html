@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Formulario de Datos de Usuario</title>
+    </head>
+    <body>
+        <h1>Registro de Usuario</h1>
+        <!--Crear un formulario de “Datos de Usuario”, El formulario debe de contar con cuatro campos: Usuario, Correo Electrónico, Contraseña y Repita Contraseña. Y un botón
+        para enviar los datos.-->
+        <form id="userForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required minlength="4">
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$">
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required minlength="6" maxlength="12">
+            
+            <label for="confirmPassword">Repita Contraseña:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6" maxlength="12">
+            
+            <button type="button" id="submitButton">Enviar Datos</button>
+        </form>
+    </body>
+    </html>
